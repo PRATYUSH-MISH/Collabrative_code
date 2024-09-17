@@ -14,7 +14,7 @@ import 'codemirror/addon/edit/closebrackets';
 const Editor = ({ socketRef, roomId, onCodeChange }) => {
   const editorRef = useRef(null);
   const [output, setOutput] = useState(''); // For displaying the output
-  const [language, setLanguage] = useState('javascript');
+  const [language, setLanguage] = useState('nodejs');
 
   useEffect(() => {
     if (!editorRef.current) {
@@ -75,7 +75,7 @@ const Editor = ({ socketRef, roomId, onCodeChange }) => {
       cpp17:'cpp'
     };
 
-    const mode = modeMapping[selectedLanguage] || 'javascript';
+    const mode = modeMapping[selectedLanguage] ;
     editorRef.current.setOption('mode', mode);
   };
 

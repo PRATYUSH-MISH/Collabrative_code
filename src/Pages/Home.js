@@ -60,8 +60,7 @@ const Home = () => {
 
                     <span className='createInfo'> If you dont have an Invte than create
 
-                        <a onClick={createNewRoom}
-                            href="" className='createNewBtn'>  new room</a>
+                        <button onClick={createNewRoom} className='createNewBtn'> new room</button>
                     </span>
                 </div>
 
@@ -69,7 +68,7 @@ const Home = () => {
             </div>
 
             <footer><h4>
-                Built with  <a href="https://github.com/PRATYUSH-MISH"> love </a>
+                Visit My <a href="https://github.com/PRATYUSH-MISH"> Github Link </a>
             </h4></footer>
 
 

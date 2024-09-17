@@ -59,7 +59,7 @@ footer a {
      width: 100px;
      margin-left:  auto ;
   }
-  .joinBtn :hover,.leaveBtn:hover{
+  .joinBtn :hover{
     background: #3dba6f;
   }
   .createInfo{
@@ -133,8 +133,38 @@ footer a {
     background: #df5a5a;
    }
    .CodeMirror{
-    min-height: calc(100vh - 20px);
+    min-height: calc(88vh - 20px);
     font-size: 20px;
     line-height: 1.6;
-    padding-top: 20px;
-   }
+    padding-top: 10px;
+  }
+  .output{
+    padding: 10px;
+    background-color:#f8e9e9;
+    border: 1px solid #ccc;
+    
+
+    
+  }
+    .statusDot {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 9px;
+      height: 9px;
+     
+      border-radius: 50%;
+      border: 2px solid white;
+    }
+        .avatarWrapper {
+          position: relative;
+          display: inline-block;
+        }
+                .statusDot.online {
+                  background-color: green;
+                }
+        
+                /* Red dot when the window is inactive */
+                .statusDot.offline {
+                  background-color: red;
+                }

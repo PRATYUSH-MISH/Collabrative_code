@@ -3,7 +3,7 @@ import axios from 'axios';
 export async function compileCode(language, code) {
     const endpoint = 'https://online-code-compiler.p.rapidapi.com/v1/';
     // Debugging: Log the input parameters
-    console.log('Selected Language:', language);
+    
     const payload = {
         language: language,
         version: 'latest',
@@ -11,9 +11,9 @@ export async function compileCode(language, code) {
         input: null
     }; 
    
-    console.log('Payload', payload);
+     console.log('Payload', payload);
    
-    console.log('Payload:', JSON.stringify(payload, null, 2));
+     console.log('Payload:', JSON.stringify(payload, null, 2));
   
     
 
@@ -23,7 +23,7 @@ export async function compileCode(language, code) {
             headers: {
                 'Content-Type': 'application/json',
                 'x-rapidapi-host': 'online-code-compiler.p.rapidapi.com',
-                'x-rapidapi-key': '9350b0b26amsh42a6d7bf6609482p1a30c1jsn1ebc4f73e7fe'
+                'x-rapidapi-key': '4b6a479c9cmsh46a59eac9ef9dc9p16f2e5jsn016b43fc2621'
                 
             }
         });
