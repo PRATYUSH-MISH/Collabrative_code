@@ -4,6 +4,7 @@ import Editor from '../components/Editor';
 import { useLocation, useNavigate, Navigate, useParams } from 'react-router-dom';
 import { initSocket } from '../socket';
 import ACTIONS from '../Actions';
+import FileExplorer from './FileExplorer';
 import toast from 'react-hot-toast';
 
 const EditorPages = () => {
@@ -97,6 +98,8 @@ const EditorPages = () => {
           <div className="logo">
             <img className="logoImage" src="/code-sync.png" alt="logo" />
           </div>
+         
+          <FileExplorer /><br />
           <h3>Connected User(s)</h3>
           <div className="clientList">
             {clients.map((client) => (
@@ -107,6 +110,7 @@ const EditorPages = () => {
         <button className="btn copyBtn" onClick={copyRoomId}>Copy Room ID</button>
         <button className="btn leaveBtn" onClick={leaveRoom }>Leave</button>
       </div>
+      
       <div className="editorWrap">
         <Editor socketRef={socketRef} roomId={roomId} onCodeChange={(code) => {
           codeRef.current = code;
