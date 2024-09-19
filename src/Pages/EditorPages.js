@@ -108,7 +108,7 @@ const EditorPages = () => {
           </div>
         </div>
         <button className="btn copyBtn" onClick={copyRoomId}>Copy Room ID</button>
-        <button className="btn leaveBtn" onClick={leaveRoom }>Leave</button>
+        <button className="btn leaveBtn" onClick={leaveRoom }>Leave the room</button>
       </div>
       
       <div className="editorWrap">
